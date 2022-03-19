@@ -1,0 +1,24 @@
+<div>
+  <p>
+    <label> Digite o número da tabuada</label>
+      <input type="text" name="numeroTab"  [(ngModel)] ="numeroDigitado" placeholder="Teste">
+  </p>
+
+  <p>
+    <label>Até qual número você quer que calcule? </label>
+    <input type="text" name="numeroTab"  [(ngModel)] =  "numeroMaximoTabuada" placeholder="Tabuada Final">
+  </p>
+
+<button (click)="calcular()">Calcular</button>
+
+<div *ngFor="let item of resposta">
+
+  <p>
+    {{item}}
+</p>
+
+</div>
+{{resposta}}
+</div>
+
+}
